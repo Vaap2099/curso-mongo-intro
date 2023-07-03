@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   mongodb:
-    image: mongo: 5.0
+    image: mongo
     ports:
       - 27017:27017
     environment:
@@ -10,4 +10,3 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=root123
     volumes:
       - ./mongo_data:/data/db
-      
