@@ -1,0 +1,7 @@
+use("platzi_store")
+
+// db.inventory.find({"item.description": { $regex: /line/ } })
+// db.inventory.find({"item.description": { $regex: /LINE/i } })//para ser case insensitive
+// db.inventory.find({"item.description": { $regex: /line$/i } })//para buscar al final
+// db.inventory.find({"item.description": { $regex: /^single/i } })//para buscar al principio
+db.inventory.find({"item.description": { $regex: /^s/im } })//multilinea
