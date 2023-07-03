@@ -1,0 +1,6 @@
+use ("sample_training")
+
+//1= ascendnte de 0 a 10 o de A-Z
+//-1 = descendente de 10 a 0 o Z-A
+
+db.zips.find({pop: {$gte: 100}}).sort({pop: -1}).limit(2)
